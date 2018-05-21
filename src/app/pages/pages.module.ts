@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 
+import { FormsModule } from '@angular/forms';
+
 import { PagesComponent } from './pages.component';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -22,7 +24,8 @@ import { PAGES_ROUTES } from './pages.routes';
     ],
     imports: [
         SharedModule,
-        PAGES_ROUTES
+        PAGES_ROUTES,
+        FormsModule
     ]
 })
 export class PagesModule { }
